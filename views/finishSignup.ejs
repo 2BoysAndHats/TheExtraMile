@@ -1,0 +1,21 @@
+<br>
+
+<div class="container-fluid">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-md-8 text-center">
+            <h1>Just one more thing...</h1>
+            <hr>
+            <form action="/moves/finishSignup">
+                <h3>What class are you in?</h3>
+                <div class="form-group">
+                    <select name='class' class='form-control' id='classesSelector'>
+                        <% classes.forEach(function (c){ %>
+                            <option name = "class" value = "<%= c.id %>" ><%= c.name %></option>
+                        <% }) %>
+                    </select>
+                </div>
+                <input type="submit" class="btn btn-primary" placeholder="Go!" />
+            </form>
+        </div>
+    </div>
+</div>
