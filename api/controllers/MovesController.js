@@ -24,7 +24,7 @@ module.exports = {
 
     callback: function (req,res) {
         //Was there an error?
-        if (req.allParams()['error']) { console.log (err); return res.redirect('/') }
+        if (req.allParams()['error']) { console.log (req.allParams()['error']); return res.redirect('/') }
 
         //Get the code
         code = req.allParams()['code']
